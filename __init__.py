@@ -42,7 +42,6 @@ def save_file():
     user_file_path(req.filename).write_text(req.content)
     return redirect('/')
 
-
 if __name__ == '__main__':
     app.logger.setLevel(logging.DEBUG)
     app.run(debug=True)

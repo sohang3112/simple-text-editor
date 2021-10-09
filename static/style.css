@@ -35,6 +35,7 @@ body {
 h1 {
 	text-align: center;
 	color: var(--coffee-brown);
+	margin-bottom: 10px;
 }
 
 nav {
