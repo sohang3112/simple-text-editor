@@ -6,24 +6,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="/static/favicon.ico">
 	<link rel="stylesheet" href="/static/style.css">
+	
+	<!-- Font Awesome CDN -->
+	<link rel="stylesheet" 
+		  href="https://stackpath.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
 </head>
 <body class="light">
 	<h1>
-		<img src="/static/favicon.ico">
+		<i class="fa-solid fa-pen-to-square"></i>
 		Simple Text Editor	
 	</h1>
 	
+	<nav>
+		<button onclick="new_file()">New</button>
+		<button onclick="open_file()">Open</button>
+		<button form="editor" type="submit">Save</button>
+	</nav>
+	
 	<form id="editor" action="/save_file" method="post">
-		<nav>
-			<button type="button" onclick="new_file()">New</button>
-			<button type="button" onclick="open_file()">Open</button>
-			<button type="submit">Save</button>
-		</nav>
-		
-		<label for="name">File Name:</label>
-		<input name="name" placeholder="Untitled File">
-		
-		<textarea name="content"></textarea>
+		<input name="filename" placeholder="Untitled File">		
+		<textarea name="content" placeholder="Write something here..."></textarea>
 	</form>
 	
 	<script src="/static/script.js"></script>
