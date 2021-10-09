@@ -1,0 +1,22 @@
+body {
+	font-family: arial, helvectica;
+}
+
+.light {
+	color: #555;
+	background-color: white;
+}
+
+.dark {
+	color: white;
+	background-color: black;
+}
+
+h1 {
+	text-align: center;
+}
+
+textarea {
+	width: 95%;
+	height: 500px;
+}
