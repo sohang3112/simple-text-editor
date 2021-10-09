@@ -15,12 +15,12 @@ class FormRequest:
     def __getattr__(self, attr: str) -> str:
         return request.form.get(attr)
 
+DEBUG = True
+user_dir = Path('user-files')
+app = Flask(__name__)
 
 def user_file_path(filename: str) -> Path:
-    return Path('user-files', filename).with_suffix('.txt')
-
-
-app = Flask(__name__)
+    return (user_dir / filename).with_suffix('.txt')
 
 @app.route('/')
 def home():
@@ -42,6 +42,11 @@ def save_file():
     user_file_path(req.filename).write_text(req.content)
     return redirect('/')
 
+def main():
+    user_dir.mkdir(parents=True, exist_ok=True)
+    if DEBUG:
+        app.logger.setLevel(logging.DEBUG)
+    app.run(debug=DEBUG)
+
 if __name__ == '__main__':
-    app.logger.setLevel(logging.DEBUG)
-    app.run(debug=True)
+    main()
