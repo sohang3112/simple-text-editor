@@ -4,6 +4,8 @@ This is a simple web-based text editor, which I created for answering an intervi
 ## Functionality
 It supports Opening, Saving and Editing text files from a Web page.
 
+![Demo Screenshot](https://imgur.com/a/hKxUzDm)
+
 ## Installation
 - Clone this repository.
 - Install [Flask](https://flask.palletsprojects.com/en/2.0.x/) using [Pip](https://docs.python.org/3/installing/index.html) - `pip install flask`.
