@@ -8,6 +8,7 @@ It supports Opening, Saving and Editing text files from a Web page.
 - Clone this repository.
 - Install [Flask](https://flask.palletsprojects.com/en/2.0.x/) using [Pip](https://docs.python.org/3/installing/index.html) - `pip install flask`.
 - Change directory to project directory `cd simple-text-editor` and run `python __init__.py`.
+- Open `localhost:5000` in any web browser.
 
 ## Technology Stack
 - **Backend** - Python 3 with Flask
