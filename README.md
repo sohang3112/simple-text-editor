@@ -4,7 +4,7 @@ This is a simple web-based text editor, which I created for answering an intervi
 ## Functionality
 It supports Opening, Saving and Editing text files from a Web page.
 
-![Demo Screenshot](https://imgur.com/a/hKxUzDm)
+![Demo Screenshot](demo-screenshot.png)
 
 ## Installation
 - Clone this repository.
