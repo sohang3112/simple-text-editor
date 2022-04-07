@@ -15,3 +15,8 @@ It supports Opening, Saving and Editing text files from a Web page.
 ## Technology Stack
 - **Backend** - Python 3 with Flask
 - **Frontend** - HTML 5 / CSS 3 / JavaScript, Font Awesome library (for drawing logo icon)
+
+## Idea
+Make this into an online clone of Notepad++! (Why? Because I like Notepad++!)
+
+**Note:** It definitely has to be *fast*, because speed is my favourite feature of Notepad++.
